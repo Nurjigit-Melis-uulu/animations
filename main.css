@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content {
+  width: 90%;
+  height: 90vh;
+  background: #21222C;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+  margin: 30px 0;
+}
