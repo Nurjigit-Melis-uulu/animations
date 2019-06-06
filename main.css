@@ -115,3 +115,30 @@ section {
   left: -5px;
   animation: none;
 }
+
+.clock {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  background: linear-gradient(-45deg, white, rgb(146, 146, 146));
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
+.clock div {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+
+.clock div::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: calc(50% - 5px);
+  position: absolute;
+  left: calc(50% - 2px);
+  top: 5px;
+  background: #000;
+  border-radius: 10px;
+}
