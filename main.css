@@ -199,3 +199,46 @@ section {
     transform: translate(200%, 100%) rotateZ(720deg);
   }
 }
+
+.anima-4 {
+  display: flex;
+}
+
+.anima-4 .word {
+  margin: 0 20px;
+  font-size: 2.5em;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.anima-4 .word span {
+  display: block;
+  transition: all .6s;
+}
+
+.anima-4 .word span:hover {
+  transform: rotateX(360deg);
+  animation: neon 2s .5s forwards linear 1;
+}
+
+@keyframes neon {
+
+  35%,
+  37%,
+  39%,
+  41%,
+  100% {
+    color: #f1f4f5;
+    text-shadow: 0 0 10px #f1f4f5;
+  }
+
+  0%,
+  34%,
+  36%,
+  38%,
+  40% {
+    color: #000000;
+    text-shadow: 0 0 10px #1a1e24;
+  }
+}
