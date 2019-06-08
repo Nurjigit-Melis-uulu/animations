@@ -142,3 +142,57 @@ section {
   background: #000;
   border-radius: 10px;
 }
+
+.anima-3 {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  background: white;
+  animation: cube 6s infinite ease-in;
+}
+
+.platform {
+  width: 0;
+  height: 15px;
+  background: white;
+  position: absolute;
+  right: 100px;
+  bottom: 35px;
+  animation: anima3-platform 3s linear infinite;
+  animation-delay: 3s;
+}
+
+@keyframes anima3-platform {
+  0% {}
+
+  100% {
+    width: 300px;
+  }
+}
+
+@keyframes cube {
+  0% {}
+
+  25% {
+    transform: translate(100%, -100%) rotateZ(360deg);
+  }
+
+  50% {
+    margin: 0;
+    height: 100px;
+    transform: translate(200%, 100%) rotateZ(720deg);
+  }
+
+  100% {
+    margin: 300px 0 0;
+    height: 0;
+    transform: translate(200%, 100%) rotateZ(720deg);
+  }
+}
