@@ -165,12 +165,15 @@ section {
   position: absolute;
   right: 100px;
   bottom: 35px;
-  animation: anima3-platform 3s linear infinite;
-  animation-delay: 3s;
+  animation: anima3-platform 6s linear infinite;
 }
 
 @keyframes anima3-platform {
-  0% {}
+
+  0%,
+  50% {
+    width: 0;
+  }
 
   100% {
     width: 300px;
